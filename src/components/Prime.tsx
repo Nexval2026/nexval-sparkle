@@ -1,0 +1,56 @@
+import { useScrollReveal } from '@/hooks/useScrollReveal';
+
+const features = [
+  { title: 'Degressive AfA', desc: '5 % p.a. vom Restbuchwert gemäß § 7 Abs. 5a EStG' },
+  { title: 'Sonder-AfA', desc: 'Zusätzlich 5 % p.a. in den ersten 4 Jahren (§ 7b EStG)' },
+  { title: 'KfW-Förderung', desc: 'Programm 297/298, bis 150.000 EUR pro Einheit, Zinsen unter Marktniveau' },
+  { title: 'Nebenkosten', desc: 'Optimiert durch getrennten Grundstücks- und Bauvertrag' },
+];
+
+export default function Prime() {
+  const ref = useScrollReveal();
+
+  return (
+    <section id="prime" className="py-24 bg-background" ref={ref}>
+      <div className="container mx-auto px-6">
+        <div className="scroll-reveal">
+          <span className="section-label">PRIME</span>
+          <h2 className="section-headline mint-underline mt-2">NEXVAL PRIME</h2>
+          <p className="mt-6 text-gray-sub max-w-xl">
+            Nachhaltige Neubauinvestments in wachstumsstarken Wohnlagen.
+          </p>
+          <p className="mt-4 text-gray-text max-w-2xl leading-relaxed">
+            Unsere PRIME-Investments setzen auf den KfW-40/QNG-Standard und bieten maximale steuerliche Vorteile durch
+            degressive und Sonder-AfA. Wir entwickeln energieeffiziente Doppelhäuser in familienorientierten Lagen mit
+            stabiler Nachfrage und langfristigem Wertsteigerungspotenzial.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+          {features.map((f, i) => (
+            <div key={i} className="card-mint scroll-reveal">
+              <h3 className="font-bold text-navy-text">{f.title}</h3>
+              <p className="text-sm text-gray-text mt-1">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* AfA Breakdown */}
+        <div className="mt-16 scroll-reveal">
+          <h3 className="text-xl font-bold text-navy-text">AfA-Breakdown: bis zu 38,5 % in 4 Jahren</h3>
+          <div className="mt-4 relative h-8 rounded-full overflow-hidden" style={{ backgroundColor: 'hsl(var(--gray-light))' }}>
+            <div
+              className="h-full rounded-full flex items-center justify-end pr-3 transition-all duration-1000"
+              style={{ width: '38.5%', background: 'linear-gradient(90deg, hsl(155,94%,67%), hsl(155,80%,50%))' }}
+            >
+              <span className="text-xs font-bold" style={{ color: 'hsl(var(--navy))' }}>38,5 %</span>
+            </div>
+          </div>
+          <p className="text-sm text-gray-sub mt-2">
+            Degressive AfA 5 % + Sonder-AfA 5 % in den ersten 4 Jahren
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
