@@ -22,12 +22,12 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled ? 'py-3' : 'py-5'
       }`}
       style={{
-        backgroundColor: 'rgba(15,26,46,0.95)',
-        backdropFilter: 'blur(20px)',
+        backgroundColor: scrolled ? 'rgba(15,26,46,0.95)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(20px)' : 'none',
       }}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
