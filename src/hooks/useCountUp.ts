@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-export function useCountUp(end: string, duration = 1500) {
+export function useCountUp(end: string, duration = 2000) {
   const [display, setDisplay] = useState(end);
   const ref = useRef<HTMLSpanElement>(null);
   const hasAnimated = useRef(false);
