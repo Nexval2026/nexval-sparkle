@@ -9,7 +9,7 @@ const stats = [
 ];
 
 function StatItem({ value, label, isText }: { value: string; label: string; isText: boolean }) {
-  const { ref, display } = useCountUp(value);
+  const { ref, display } = useCountUp(value, 2000);
   return (
     <div className="text-center">
       <span ref={ref} className="block text-xl md:text-2xl font-bold text-mint">
