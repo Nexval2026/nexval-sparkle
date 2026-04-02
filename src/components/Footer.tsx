@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const links = [
   { label: 'PRIME', href: '#prime' },
   { label: 'TRANSACT', href: '#transact' },
@@ -13,10 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Logo & Info */}
           <div>
-            <span className="font-montserrat text-2xl font-bold">
-              <span className="text-white">NEX</span>
-              <span className="text-mint">VAL</span>
-            </span>
+            <img src="/images/nexval-logo.png" alt="Nexval" className="h-10" />
             <p className="text-white/40 text-sm mt-3">
               Hans-Henny-Jahnn-Weg 41-45<br />22085 Hamburg
             </p>
@@ -39,8 +38,9 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white/60 uppercase tracking-wider mb-4">Rechtliches</h4>
             <div className="space-y-2">
-              <a href="#" className="block text-sm text-white/40 hover:text-mint transition-colors">Impressum</a>
-              <a href="#" className="block text-sm text-white/40 hover:text-mint transition-colors">Datenschutz</a>
+              <Link to="/impressum" className="block text-sm text-white/40 hover:text-mint transition-colors">Impressum</Link>
+              <Link to="/datenschutz" className="block text-sm text-white/40 hover:text-mint transition-colors">Datenschutz</Link>
+              <Link to="/datenschutz#cookies" className="block text-sm text-white/40 hover:text-mint transition-colors">Cookie Richtlinie (EU)</Link>
             </div>
           </div>
         </div>

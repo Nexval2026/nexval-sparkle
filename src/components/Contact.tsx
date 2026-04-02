@@ -39,6 +39,11 @@ export default function Contact() {
           </button>
         </form>
 
+        <p className="mt-4 text-center text-sm text-gray-text scroll-reveal">
+          Alternativ erreichen Sie uns direkt unter{' '}
+          <a href="mailto:info@nexval.de" className="text-mint hover:underline">info@nexval.de</a>
+        </p>
+
         <div className="mt-12 text-center text-sm text-gray-text scroll-reveal space-y-1">
           <p className="font-semibold text-navy-text">Nexval GmbH i.G.</p>
           <p>Hans-Henny-Jahnn-Weg 41-45, 22085 Hamburg</p>

@@ -8,7 +8,10 @@ const values = [
   { icon: Users, title: 'Ganzheitliche Betreuung', desc: 'Von der Konzeption bis zur Verwaltung' },
 ];
 
-const founders = ['Nick Sadetzky', 'Sascha Hesse'];
+const founders = [
+  { name: 'Nick Sadetzky', img: '/images/nick.jpg' },
+  { name: 'Sascha Hesse', img: '/images/sascha.jpg' },
+];
 
 export default function About() {
   const ref = useScrollReveal();
@@ -37,13 +40,23 @@ export default function About() {
         <div className="mt-20 scroll-reveal">
           <h3 className="text-2xl font-bold text-navy-text mint-underline">Gründer</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-            {founders.map((name) => (
-              <div key={name} className="card-light flex items-center gap-4 scroll-reveal">
-                <div className="w-20 h-20 rounded-full flex-shrink-0 bg-muted flex items-center justify-center">
-                  <Users className="w-8 h-8 text-muted-foreground" />
-                </div>
+            {founders.map((f) => (
+              <div key={f.name} className="card-light flex items-center gap-4 scroll-reveal">
+                <img
+                  src={f.img}
+                  alt={f.name}
+                  className="w-20 h-20 rounded-full flex-shrink-0 object-cover bg-muted"
+                  onError={(e) => {
+                    const el = e.target as HTMLImageElement;
+                    el.style.display = 'none';
+                    const fallback = document.createElement('div');
+                    fallback.className = 'w-20 h-20 rounded-full flex-shrink-0 bg-muted flex items-center justify-center text-muted-foreground text-xl font-bold';
+                    fallback.textContent = f.name.split(' ').map(n => n[0]).join('');
+                    el.parentElement?.insertBefore(fallback, el);
+                  }}
+                />
                 <div>
-                  <h4 className="font-bold text-navy-text">{name}</h4>
+                  <h4 className="font-bold text-navy-text">{f.name}</h4>
                   <p className="text-sm text-gray-text">Geschäftsführer</p>
                 </div>
               </div>

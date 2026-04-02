@@ -50,6 +50,11 @@ export default function Prime() {
             Degressive AfA 5 % + Sonder-AfA 5 % in den ersten 4 Jahren
           </p>
         </div>
+
+        {/* Disclaimer */}
+        <p className="mt-8 text-xs text-muted-foreground/40 scroll-reveal">
+          Die dargestellten steuerlichen Vorteile basieren auf der aktuellen Gesetzeslage (Stand 04/2026) und können sich ändern. Steuerliche Effekte hängen von der individuellen Situation ab. Bitte konsultieren Sie Ihren Steuerberater.
+        </p>
       </div>
     </section>
   );
