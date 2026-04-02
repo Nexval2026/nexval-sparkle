@@ -47,6 +47,18 @@ export default function Datenschutz() {
             Wenn Sie uns über das Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse (Art. 6 Abs. 1 lit. f DSGVO).
           </p>
 
+          <h2 className={h2Class}>3a. Kontaktformular (Formspree)</h2>
+          <p>
+            Für die technische Abwicklung unseres Kontaktformulars nutzen wir den Dienst Formspree (Formspree, Inc., USA). Wenn Sie unser Kontaktformular nutzen, werden Ihre eingegebenen Daten (Name, E-Mail-Adresse, Nachricht) über die Server von Formspree an uns weitergeleitet. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen). Weitere Informationen finden Sie in der Datenschutzerklärung von Formspree:{' '}
+            <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-mint hover:underline">https://formspree.io/legal/privacy-policy</a>
+          </p>
+
+          <h2 className={h2Class}>3b. Spam-Schutz (hCaptcha)</h2>
+          <p>
+            Zum Schutz unseres Kontaktformulars vor automatisiertem Missbrauch nutzen wir den Dienst hCaptcha (Intuition Machines, Inc., USA). Bei der Nutzung des Kontaktformulars werden technische Daten (IP-Adresse, Browserinformationen) an hCaptcha übermittelt, um zu prüfen, ob die Eingabe durch einen Menschen erfolgt. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am Schutz vor Spam). Weitere Informationen finden Sie in der Datenschutzerklärung von hCaptcha:{' '}
+            <a href="https://www.hcaptcha.com/privacy" target="_blank" rel="noopener noreferrer" className="text-mint hover:underline">https://www.hcaptcha.com/privacy</a>
+          </p>
+
           <h2 className={h2Class} id="cookies">4. Cookies</h2>
           <p>
             Unsere Website verwendet keine Tracking- oder Analyse-Cookies. Es werden lediglich technisch notwendige Cookies eingesetzt, die für den Betrieb der Website erforderlich sind. Diese Cookies werden automatisch nach Ende Ihrer Browser-Sitzung gelöscht. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO.
