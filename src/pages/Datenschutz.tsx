@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 export default function Datenschutz() {
   const { hash } = useLocation();
