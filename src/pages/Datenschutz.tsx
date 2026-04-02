@@ -73,7 +73,9 @@ export default function Datenschutz() {
 
           <p className="text-xs text-white/40 pt-6">Stand: 04/2026</p>
         </div>
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
