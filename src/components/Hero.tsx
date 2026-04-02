@@ -12,10 +12,10 @@ function StatItem({ value, label, isText }: { value: string; label: string; isTe
   const { ref, display } = useCountUp(value, 1500);
   return (
     <div className="text-center">
-      <span ref={ref} className="block text-xl md:text-2xl font-bold text-mint">
+      <span ref={ref} className="block text-lg md:text-xl font-semibold text-mint">
         {isText ? value : display}
       </span>
-      <span className="block text-xs text-white/50 mt-1">{label}</span>
+      <span className="block text-xs text-white/40 mt-1.5 tracking-wide">{label}</span>
     </div>
   );
 }
@@ -34,7 +34,6 @@ export default function Hero() {
 
   return (
     <>
-      {/* Upper hero with background image */}
       <section
         className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden"
         style={{ backgroundColor: 'hsl(218,50%,12%)' }}
@@ -44,20 +43,20 @@ export default function Hero() {
           src="/images/Titelbild.jpg"
           alt=""
           className="absolute inset-0 w-full h-full object-cover will-change-transform"
-          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+          style={{ transform: `translateY(${scrollY * 0.35}px)` }}
         />
-        <div className="absolute inset-0 bg-[hsl(218,50%,12%)]/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(218,50%,12%)]/70 via-[hsl(218,50%,12%)]/50 to-[hsl(218,50%,12%)]/80" />
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-[700px] animate-fade-up">
-            <h1 className="text-5xl md:text-7xl lg:text-[80px] font-extrabold leading-[0.95] tracking-[-0.03em]">
-              <span className="text-white block">ZUKUNFT BAUEN.</span>
-              <span className="text-mint block mt-2">WERTE SICHERN.</span>
+          <div className="max-w-[640px] animate-fade-up">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-[-0.035em]">
+              <span className="text-white block">Zukunft bauen.</span>
+              <span className="text-mint block mt-1">Werte sichern.</span>
             </h1>
-            <p className="mt-6 text-lg text-white/50 max-w-[500px]" style={{ animationDelay: '200ms' }}>
+            <p className="mt-6 text-base md:text-lg text-white/50 max-w-[480px] leading-relaxed font-light">
               Strukturierte Immobilieninvestments mit Fokus auf nachhaltigen Vermögensaufbau.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4" style={{ animationDelay: '400ms' }}>
+            <div className="mt-10 flex flex-wrap gap-4">
               <a href="#prime" className="btn-mint">PRIME ENTDECKEN</a>
               <a href="#contact" className="btn-outline-mint">KONTAKT</a>
             </div>
@@ -65,25 +64,22 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* Lower section: cards + stats on dark bg */}
-      <section className="py-16" style={{ backgroundColor: '#0a1628' }}>
+      <section className="py-20" style={{ backgroundColor: 'hsl(218,52%,10%)' }}>
         <div className="container mx-auto px-6">
-          {/* Service cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
               { title: 'PRIME', desc: 'Nachhaltige Neubauinvestments' },
               { title: 'TRANSACT', desc: 'Immobilientransaktionen' },
               { title: 'OPS', desc: 'Operatives Management' },
             ].map((c, i) => (
-              <a href={`#${c.title.toLowerCase()}`} key={i} className="glass-card cursor-pointer">
-                <h3 className="text-xl font-bold text-mint">{c.title}</h3>
-                <p className="text-sm text-white/50 mt-1">{c.desc}</p>
+              <a href={`#${c.title.toLowerCase()}`} key={i} className="glass-card cursor-pointer group">
+                <h3 className="text-lg font-semibold text-mint group-hover:text-white transition-colors">{c.title}</h3>
+                <p className="text-sm text-white/40 mt-2 leading-relaxed">{c.desc}</p>
               </a>
             ))}
           </div>
 
-          {/* Stats bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-8 border-t border-white/10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-10 border-t border-white/[0.06]">
             {stats.map((s, i) => (
               <StatItem key={i} {...s} />
             ))}
