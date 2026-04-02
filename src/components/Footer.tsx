@@ -40,7 +40,7 @@ export default function Footer() {
             <div className="space-y-2">
               <Link to="/impressum" className="block text-sm text-white/40 hover:text-mint transition-colors">Impressum</Link>
               <Link to="/datenschutz" className="block text-sm text-white/40 hover:text-mint transition-colors">Datenschutz</Link>
-              <Link to="/datenschutz#cookies" className="block text-sm text-white/40 hover:text-mint transition-colors">Cookie Richtlinie (EU)</Link>
+              
             </div>
           </div>
         </div>
