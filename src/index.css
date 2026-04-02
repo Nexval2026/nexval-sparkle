@@ -105,8 +105,8 @@
 
   .card-light {
     @apply rounded-xl border p-6;
-    background-color: hsl(var(--gray-light));
-    border-color: hsl(var(--border));
+    background-color: hsl(var(--navy-card));
+    border-color: hsl(var(--navy-border));
   }
 
   .card-mint {
