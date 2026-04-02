@@ -18,8 +18,10 @@ export default function Datenschutz() {
   const h2Class = "text-lg font-semibold text-white mb-2 mt-8";
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'hsl(218,50%,12%)' }}>
-      <div className="container mx-auto px-6 py-24 max-w-3xl">
+    <>
+      <Navigation />
+      <div className="min-h-screen" style={{ backgroundColor: 'hsl(218,50%,12%)' }}>
+        <div className="container mx-auto px-6 py-24 pt-32 max-w-3xl">
         <Link to="/" className="inline-flex items-center gap-2 text-mint hover:text-mint/80 transition-colors mb-12">
           <ArrowLeft size={18} />
           <span className="text-sm font-semibold">Zurück zur Startseite</span>
