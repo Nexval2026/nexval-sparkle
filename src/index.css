@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    --background: 218 50% 12%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 100%;
+    --foreground: 220 30% 20%;
 
-    --card: 220 38% 20%;
-    --card-foreground: 0 0% 95%;
+    --card: 220 14% 96%;
+    --card-foreground: 220 30% 20%;
 
-    --popover: 220 38% 20%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 20%;
 
     --primary: 155 94% 67%;
     --primary-foreground: 218 50% 12%;
 
-    --secondary: 220 38% 20%;
-    --secondary-foreground: 0 0% 90%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 30% 20%;
 
-    --muted: 222 27% 28%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
     --accent: 155 94% 67%;
     --accent-foreground: 218 50% 12%;
@@ -30,8 +30,8 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 222 27% 28%;
-    --input: 222 27% 28%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
     --ring: 155 94% 67%;
 
     --radius: 0.75rem;
@@ -41,19 +41,19 @@
     --navy-card: 220 38% 20%;
     --navy-border: 222 27% 28%;
     --mint: 155 94% 67%;
-    --mint-light: 155 40% 18%;
-    --gray-text: 220 9% 65%;
+    --mint-light: 155 100% 95%;
+    --gray-text: 220 9% 46%;
     --gray-subtext: 217 11% 62%;
-    --gray-light: 220 38% 20%;
+    --gray-light: 220 14% 96%;
 
-    --sidebar-background: 220 38% 20%;
-    --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 0 0% 95%;
-    --sidebar-primary-foreground: 218 50% 12%;
-    --sidebar-accent: 222 27% 28%;
-    --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 222 27% 28%;
-    --sidebar-ring: 155 94% 67%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -78,8 +78,7 @@
   }
 
   .section-headline {
-    @apply text-4xl md:text-[44px] font-bold leading-tight;
-    color: hsl(0 0% 95%);
+    @apply text-4xl md:text-[44px] font-bold text-navy-text leading-tight;
   }
 
   .section-headline-white {
@@ -105,8 +104,8 @@
 
   .card-light {
     @apply rounded-xl border p-6;
-    background-color: hsl(var(--navy-card));
-    border-color: hsl(var(--navy-border));
+    background-color: hsl(var(--gray-light));
+    border-color: hsl(var(--border));
   }
 
   .card-mint {

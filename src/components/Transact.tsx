@@ -21,8 +21,8 @@ export default function Transact() {
         <div className="mt-12 space-y-4">
           {steps.map((s, i) => (
             <div key={i} className="card-light flex items-start gap-5 scroll-reveal">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 text-sm font-bold"
-                style={{ backgroundColor: 'hsl(var(--mint))', color: 'hsl(var(--navy))' }}>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 text-sm font-bold text-white"
+                style={{ backgroundColor: 'hsl(var(--navy))' }}>
                 {s.num}
               </div>
               <div>

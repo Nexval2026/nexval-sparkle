@@ -60,7 +60,7 @@ export default {
           DEFAULT: "hsl(var(--mint))",
           light: "hsl(var(--mint-light))",
         },
-        "navy-text": "hsl(0 0% 95%)",
+        "navy-text": "hsl(var(--navy))",
         "gray-text": "hsl(var(--gray-text))",
         "gray-sub": "hsl(var(--gray-subtext))",
         sidebar: {
