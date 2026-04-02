@@ -78,7 +78,8 @@
   }
 
   .section-headline {
-    @apply text-4xl md:text-[44px] font-bold text-navy-text leading-tight;
+    @apply text-4xl md:text-[44px] font-bold leading-tight;
+    color: hsl(0 0% 95%);
   }
 
   .section-headline-white {
