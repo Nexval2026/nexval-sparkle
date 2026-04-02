@@ -1,5 +1,5 @@
 import { useCountUp } from '@/hooks/useCountUp';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const stats = [
   { value: 'KfW-40 / QNG', label: 'Baustandard', isText: true },
