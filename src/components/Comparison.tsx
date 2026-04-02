@@ -14,38 +14,40 @@ export default function Comparison() {
   const ref = useScrollReveal();
 
   return (
-    <section className="py-28" ref={ref} style={{ backgroundColor: 'hsl(218,50%,12%)' }}>
-      <div className="container mx-auto px-6 max-w-5xl">
+    <section className="py-24" ref={ref} style={{ backgroundColor: 'hsl(218,50%,12%)' }}>
+      <div className="container mx-auto px-6">
         <div className="scroll-reveal">
           <h2 className="section-headline-white mint-underline">Neubau vs. Bestand</h2>
-          <p className="mt-6 text-white/45 text-base md:text-lg">Warum sich ein Neubauinvestment lohnt</p>
+          <p className="mt-6 text-white/50">Warum sich ein Neubauinvestment lohnt</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-14">
+        {/* Two cards side by side */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
           {/* Bestand card */}
-          <div className="card-dark scroll-reveal">
-            <h3 className="text-lg font-semibold text-white/35 mb-8">Bestand</h3>
-            <div className="space-y-0">
+          <div className="rounded-2xl border p-6 md:p-8 scroll-reveal" style={{ backgroundColor: 'hsl(var(--navy-card))', borderColor: 'hsl(var(--navy-border))' }}>
+            <h3 className="text-xl font-bold text-white/40 mb-6">Bestand</h3>
+            <div className="space-y-4">
               {rows.map((r, i) => (
-                <div key={i} className="flex items-center justify-between py-3 border-b border-white/[0.05]">
-                  <span className="text-sm text-white/35">{r.label}</span>
-                  <span className="text-sm font-medium text-white/45">{r.bestand}</span>
+                <div key={i} className="flex items-center justify-between py-2 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+                  <span className="text-sm text-white/40">{r.label}</span>
+                  <span className="text-sm font-semibold text-white/50">{r.bestand}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Neubau card */}
-          <div className="rounded-2xl p-6 md:p-8 relative scroll-reveal transition-all duration-300" style={{ backgroundColor: 'hsl(var(--navy-card))', border: '1.5px solid hsl(var(--mint) / 0.4)' }}>
-            <span className="absolute top-4 right-4 text-[10px] font-semibold tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: 'hsl(var(--mint))', color: 'hsl(var(--navy))' }}>
+          <div className="rounded-2xl border-2 p-6 md:p-8 relative scroll-reveal" style={{ backgroundColor: 'hsl(var(--navy-card))', borderColor: 'hsl(var(--mint))' }}>
+            {/* Badge */}
+            <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: 'hsl(var(--mint))', color: 'hsl(var(--navy))' }}>
               Unsere Empfehlung
             </span>
-            <h3 className="text-lg font-semibold text-mint mb-8">Neubau</h3>
-            <div className="space-y-0">
+            <h3 className="text-xl font-bold text-mint mb-6">Neubau</h3>
+            <div className="space-y-4">
               {rows.map((r, i) => (
-                <div key={i} className="flex items-center justify-between py-3 border-b border-mint/[0.08]">
-                  <span className="text-sm text-white/55">{r.label}</span>
-                  <span className={`text-sm font-medium ${r.highlight ? 'text-mint' : 'text-white/80'}`}>{r.neubau}</span>
+                <div key={i} className="flex items-center justify-between py-2 border-b" style={{ borderColor: 'rgba(93,250,177,0.1)' }}>
+                  <span className="text-sm text-white/60">{r.label}</span>
+                  <span className={`text-sm font-semibold ${r.highlight ? 'text-mint' : 'text-white'}`}>{r.neubau}</span>
                 </div>
               ))}
             </div>
@@ -53,16 +55,17 @@ export default function Comparison() {
         </div>
 
         {/* Result banner */}
-        <div className="mt-10 rounded-2xl p-8 md:p-10 scroll-reveal" style={{ backgroundColor: 'hsl(var(--mint))' }}>
-          <p className="text-xl md:text-2xl font-semibold tracking-tight" style={{ color: 'hsl(var(--navy))' }}>
+        <div className="mt-8 rounded-xl p-6 md:p-8 scroll-reveal" style={{ backgroundColor: 'hsl(var(--mint))' }}>
+          <p className="text-xl font-bold" style={{ color: 'hsl(var(--navy))' }}>
             Ergebnis: Bis zu +167.000 € Mehrperformance mit Neubau
           </p>
-          <p className="text-sm mt-2 opacity-70" style={{ color: 'hsl(var(--navy))' }}>
+          <p className="text-sm mt-1" style={{ color: 'hsl(var(--navy))' }}>
             Dank KfW-Förderung, optimierter AfA und geringerer Nebenkosten.
           </p>
         </div>
 
-        <p className="mt-8 text-xs text-white/25 scroll-reveal leading-relaxed">
+        {/* Disclaimer */}
+        <p className="mt-6 text-xs text-white/30 scroll-reveal">
           Beispielrechnung auf Basis einer Doppelhaushälfte mit 2 Wohneinheiten (Stand 04/2026). Annahmen: KfW-Förderdarlehen zu marktüblichen Konditionen, Spitzensteuersatz 42 %, Betrachtungszeitraum 10 Jahre. Zinssätze und Konditionen können variieren. Individuelle Ergebnisse können abweichen. Die dargestellten Werte dienen der Veranschaulichung und stellen keine Zusicherung dar. Bitte konsultieren Sie Ihren Steuerberater für eine individuelle Berechnung.
         </p>
       </div>

@@ -11,26 +11,26 @@ export default function Requirements() {
   const ref = useScrollReveal();
 
   return (
-    <section className="py-28 bg-background" ref={ref}>
-      <div className="container mx-auto px-6 max-w-5xl">
+    <section className="py-24 bg-white" ref={ref}>
+      <div className="container mx-auto px-6">
         <div className="scroll-reveal">
-          <h2 className="section-headline mint-underline">Voraussetzungen</h2>
-          <p className="mt-6 section-subtext">Was Sie für ein PRIME-Investment mitbringen sollten</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mint-underline" style={{ color: 'hsl(218,50%,12%)' }}>Voraussetzungen</h2>
+          <p className="mt-6 text-gray-500">Was Sie für ein PRIME-Investment mitbringen sollten</p>
         </div>
 
-        <div className="mt-14 space-y-4">
+        <div className="mt-12 space-y-4">
           {items.map((item, i) => (
-            <div key={i} className="flex items-start gap-5 scroll-reveal rounded-2xl p-6 transition-all duration-300 hover:shadow-sm" style={{ backgroundColor: 'hsl(var(--gray-light))' }}>
+            <div key={i} className="flex items-start gap-4 scroll-reveal rounded-2xl border border-gray-200 bg-gray-50 p-6">
               <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: 'hsl(var(--mint))' }} />
               <div>
-                <h3 className="font-semibold text-lg text-mint">{item.title}</h3>
-                <p className="text-gray-text text-sm mt-1.5 leading-relaxed">{item.desc}</p>
+                <h3 className="font-bold text-lg text-mint">{item.title}</h3>
+                <p className="text-gray-500 text-sm mt-1">{item.desc}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-14 text-center scroll-reveal">
+        <div className="mt-12 text-center scroll-reveal">
           <a href="#contact" className="btn-mint">JETZT BERATEN LASSEN</a>
         </div>
       </div>

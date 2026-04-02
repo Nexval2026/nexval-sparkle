@@ -11,48 +11,48 @@ export default function Prime() {
   const ref = useScrollReveal();
 
   return (
-    <section id="prime" className="py-28 bg-background" ref={ref}>
-      <div className="container mx-auto px-6 max-w-5xl">
+    <section id="prime" className="py-24 bg-background" ref={ref}>
+      <div className="container mx-auto px-6">
         <div className="scroll-reveal">
           <span className="section-label">PRIME</span>
-          <h2 className="section-headline mint-underline mt-3">NEXVAL PRIME</h2>
-          <p className="mt-6 section-subtext max-w-xl">
+          <h2 className="section-headline mint-underline mt-2">NEXVAL PRIME</h2>
+          <p className="mt-6 text-gray-sub max-w-xl">
             Nachhaltige Neubauinvestments in wachstumsstarken Wohnlagen.
           </p>
-          <p className="mt-4 text-gray-text leading-relaxed max-w-2xl">
+          <p className="mt-4 text-gray-text max-w-2xl leading-relaxed">
             Unsere PRIME-Investments setzen auf den KfW-40/QNG-Standard und bieten maximale steuerliche Vorteile durch
             degressive und Sonder-AfA. Wir entwickeln energieeffiziente Doppelhäuser in familienorientierten Lagen mit
             stabiler Nachfrage und langfristigem Wertsteigerungspotenzial.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
           {features.map((f, i) => (
             <div key={i} className="card-mint scroll-reveal">
-              <h3 className="font-semibold text-navy-text">{f.title}</h3>
-              <p className="text-sm text-gray-text mt-1.5 leading-relaxed">{f.desc}</p>
+              <h3 className="font-bold text-navy-text">{f.title}</h3>
+              <p className="text-sm text-gray-text mt-1">{f.desc}</p>
             </div>
           ))}
         </div>
 
         {/* AfA Breakdown */}
-        <div className="mt-20 scroll-reveal">
-          <h3 className="text-xl font-semibold text-navy-text">AfA-Breakdown: bis zu 38,5 % in 4 Jahren</h3>
-          <div className="mt-5 relative h-3 rounded-full overflow-hidden" style={{ backgroundColor: 'hsl(var(--gray-light))' }}>
+        <div className="mt-16 scroll-reveal">
+          <h3 className="text-xl font-bold text-navy-text">AfA-Breakdown: bis zu 38,5 % in 4 Jahren</h3>
+          <div className="mt-4 relative h-8 rounded-full overflow-hidden" style={{ backgroundColor: 'hsl(var(--gray-light))' }}>
             <div
-              className="h-full rounded-full transition-all duration-1000"
+              className="h-full rounded-full flex items-center justify-end pr-3 transition-all duration-1000"
               style={{ width: '38.5%', background: 'linear-gradient(90deg, hsl(155,94%,67%), hsl(155,80%,50%))' }}
-            />
+            >
+              <span className="text-xs font-bold" style={{ color: 'hsl(var(--navy))' }}>38,5 %</span>
+            </div>
           </div>
-          <div className="flex items-center justify-between mt-2">
-            <p className="text-sm text-gray-sub">
-              Degressive AfA 5 % + Sonder-AfA 5 % in den ersten 4 Jahren
-            </p>
-            <span className="text-sm font-semibold text-mint">38,5 %</span>
-          </div>
+          <p className="text-sm text-gray-sub mt-2">
+            Degressive AfA 5 % + Sonder-AfA 5 % in den ersten 4 Jahren
+          </p>
         </div>
 
-        <p className="mt-10 text-xs text-muted-foreground/50 scroll-reveal leading-relaxed">
+        {/* Disclaimer */}
+        <p className="mt-8 text-xs text-muted-foreground/40 scroll-reveal">
           Die dargestellten steuerlichen Vorteile basieren auf der aktuellen Gesetzeslage (Stand 04/2026) und können sich ändern. Steuerliche Effekte hängen von der individuellen Situation ab. Bitte konsultieren Sie Ihren Steuerberater.
         </p>
       </div>
