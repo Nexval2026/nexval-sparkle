@@ -14,34 +14,44 @@ export default function Comparison() {
   const ref = useScrollReveal();
 
   return (
-    <section className="py-24 bg-background" ref={ref}>
+    <section className="py-24" ref={ref} style={{ backgroundColor: 'hsl(218,50%,12%)' }}>
       <div className="container mx-auto px-6">
         <div className="scroll-reveal">
-          <h2 className="section-headline mint-underline">Neubau vs. Bestand</h2>
-          <p className="mt-6 text-gray-sub">Warum sich ein Neubauinvestment lohnt</p>
+          <h2 className="section-headline-white mint-underline">Neubau vs. Bestand</h2>
+          <p className="mt-6 text-white/50">Warum sich ein Neubauinvestment lohnt</p>
         </div>
 
-        <div className="mt-12 overflow-x-auto scroll-reveal">
-          <table className="w-full text-sm">
-            <thead>
-              <tr style={{ backgroundColor: 'hsl(var(--navy))' }}>
-                <th className="text-left text-white py-3 px-4 rounded-tl-lg font-semibold">Kennzahl</th>
-                <th className="text-left text-white py-3 px-4 font-semibold">Bestand</th>
-                <th className="text-left text-white py-3 px-4 rounded-tr-lg font-semibold">Neubau</th>
-              </tr>
-            </thead>
-            <tbody>
+        {/* Two cards side by side */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          {/* Bestand card */}
+          <div className="rounded-2xl border p-6 md:p-8 scroll-reveal" style={{ backgroundColor: 'hsl(var(--navy-card))', borderColor: 'hsl(var(--navy-border))' }}>
+            <h3 className="text-xl font-bold text-white/40 mb-6">Bestand</h3>
+            <div className="space-y-4">
               {rows.map((r, i) => (
-                <tr key={i} className={i % 2 === 0 ? 'bg-background' : ''} style={i % 2 !== 0 ? { backgroundColor: '#F9FAFB' } : {}}>
-                  <td className="py-3 px-4 font-medium text-navy-text">{r.label}</td>
-                  <td className="py-3 px-4 text-gray-text">{r.bestand}</td>
-                  <td className={`py-3 px-4 font-semibold ${r.highlight ? 'text-mint' : 'text-navy-text'}`}>
-                    {r.neubau}
-                  </td>
-                </tr>
+                <div key={i} className="flex items-center justify-between py-2 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+                  <span className="text-sm text-white/40">{r.label}</span>
+                  <span className="text-sm font-semibold text-white/50">{r.bestand}</span>
+                </div>
               ))}
-            </tbody>
-          </table>
+            </div>
+          </div>
+
+          {/* Neubau card */}
+          <div className="rounded-2xl border-2 p-6 md:p-8 relative scroll-reveal" style={{ backgroundColor: 'hsl(var(--navy-card))', borderColor: 'hsl(var(--mint))' }}>
+            {/* Badge */}
+            <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: 'hsl(var(--mint))', color: 'hsl(var(--navy))' }}>
+              Empfohlen
+            </span>
+            <h3 className="text-xl font-bold text-mint mb-6">Neubau</h3>
+            <div className="space-y-4">
+              {rows.map((r, i) => (
+                <div key={i} className="flex items-center justify-between py-2 border-b" style={{ borderColor: 'rgba(93,250,177,0.1)' }}>
+                  <span className="text-sm text-white/60">{r.label}</span>
+                  <span className={`text-sm font-semibold ${r.highlight ? 'text-mint' : 'text-white'}`}>{r.neubau}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Result banner */}
@@ -55,7 +65,7 @@ export default function Comparison() {
         </div>
 
         {/* Disclaimer */}
-        <p className="mt-6 text-xs text-muted-foreground/50 scroll-reveal">
+        <p className="mt-6 text-xs text-white/30 scroll-reveal">
           Beispielrechnung auf Basis einer Doppelhaushälfte mit 2 Wohneinheiten (Stand 04/2026). Annahmen: KfW-Förderdarlehen zu marktüblichen Konditionen, Spitzensteuersatz 42 %, Betrachtungszeitraum 10 Jahre. Zinssätze und Konditionen können variieren. Individuelle Ergebnisse können abweichen. Die dargestellten Werte dienen der Veranschaulichung und stellen keine Zusicherung dar. Bitte konsultieren Sie Ihren Steuerberater für eine individuelle Berechnung.
         </p>
       </div>
