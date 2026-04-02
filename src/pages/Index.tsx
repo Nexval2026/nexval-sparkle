@@ -17,10 +17,10 @@ export default function Index() {
       <Navigation />
       <Hero />
       <Prime />
-      <Projects />
       <Comparison />
       <Process />
       <Requirements />
+      <Projects />
       <Transact />
       <Ops />
       <About />
