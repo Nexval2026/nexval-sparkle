@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 export default function Datenschutz() {
   const { hash } = useLocation();
@@ -16,8 +18,10 @@ export default function Datenschutz() {
   const h2Class = "text-lg font-semibold text-white mb-2 mt-8";
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'hsl(218,50%,12%)' }}>
-      <div className="container mx-auto px-6 py-24 max-w-3xl">
+    <>
+      <Navigation />
+      <div className="min-h-screen" style={{ backgroundColor: 'hsl(218,50%,12%)' }}>
+        <div className="container mx-auto px-6 py-24 pt-32 max-w-3xl">
         <Link to="/" className="inline-flex items-center gap-2 text-mint hover:text-mint/80 transition-colors mb-12">
           <ArrowLeft size={18} />
           <span className="text-sm font-semibold">Zurück zur Startseite</span>
@@ -69,7 +73,9 @@ export default function Datenschutz() {
 
           <p className="text-xs text-white/40 pt-6">Stand: 04/2026</p>
         </div>
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
