@@ -39,13 +39,16 @@ export default function Hero() {
         className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden"
         style={{ backgroundColor: 'hsl(218,50%,12%)' }}
       >
-        <img
-          ref={imgRef}
-          src="/images/Titelbild.jpg"
-          alt=""
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute inset-0 w-full h-full object-cover will-change-transform"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
-        />
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-[hsl(218,50%,12%)]/55" />
 
         <div className="container mx-auto px-6 relative z-10">
