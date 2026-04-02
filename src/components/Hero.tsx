@@ -21,7 +21,6 @@ function StatItem({ value, label, isText }: { value: string; label: string; isTe
 }
 
 export default function Hero() {
-  const imgRef = useRef<HTMLImageElement>(null);
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
