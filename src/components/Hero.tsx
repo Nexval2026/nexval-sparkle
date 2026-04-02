@@ -21,6 +21,17 @@ function StatItem({ value, label, isText }: { value: string; label: string; isTe
 }
 
 export default function Hero() {
+  const imgRef = useRef<HTMLImageElement>(null);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
       {/* Upper hero with background image */}
@@ -29,9 +40,11 @@ export default function Hero() {
         style={{ backgroundColor: 'hsl(218,50%,12%)' }}
       >
         <img
+          ref={imgRef}
           src="/images/Titelbild.jpg"
           alt=""
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover will-change-transform"
+          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         />
         <div className="absolute inset-0 bg-[hsl(218,50%,12%)]/55" />
 
