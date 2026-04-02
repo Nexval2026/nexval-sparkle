@@ -26,12 +26,12 @@ export default function Navigation() {
         scrolled ? 'py-3' : 'py-5'
       }`}
       style={{
-        backgroundColor: scrolled ? 'rgba(15,26,46,0.85)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(20px)' : 'none',
+        backgroundColor: 'rgba(15,26,46,0.95)',
+        backdropFilter: 'blur(20px)',
       }}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#">
+        <a href="/">
           <img src="/images/nexval-logo.png" alt="Nexval" className="h-8" />
         </a>
 

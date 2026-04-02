@@ -40,7 +40,7 @@ export default function Comparison() {
           <div className="rounded-2xl border-2 p-6 md:p-8 relative scroll-reveal" style={{ backgroundColor: 'hsl(var(--navy-card))', borderColor: 'hsl(var(--mint))' }}>
             {/* Badge */}
             <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ backgroundColor: 'hsl(var(--mint))', color: 'hsl(var(--navy))' }}>
-              Empfohlen
+              Unsere Empfehlung
             </span>
             <h3 className="text-xl font-bold text-mint mb-6">Neubau</h3>
             <div className="space-y-4">

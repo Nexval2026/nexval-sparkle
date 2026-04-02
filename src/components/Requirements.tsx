@@ -2,7 +2,7 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const items = [
   { title: 'Einkommen', desc: 'Stabiles Einkommen zur steuerlichen Optimierung durch Abschreibungsvorteile' },
-  { title: 'Eigenkapital', desc: 'Ca. 130.000 - 160.000 EUR Eigenkapital für optimale Finanzierungsstruktur' },
+  { title: 'Eigenkapital', desc: 'Ausreichend Eigenkapital für eine solide Finanzierungsstruktur – individuell je nach Projekt und Finanzierungssituation.' },
   { title: 'Anlagehorizont', desc: 'Langfristiger Vermögensaufbau, mindestens 10 Jahre empfohlen' },
   { title: 'Bonität', desc: 'Gute Bonität für KfW-Förderung und Bankfinanzierung' },
 ];
