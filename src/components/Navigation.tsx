@@ -26,49 +26,53 @@ export default function Navigation() {
         scrolled ? 'py-3' : 'py-5'
       }`}
       style={{
-        backgroundColor: scrolled ? 'rgba(15,26,46,0.95)' : 'transparent',
+        backgroundColor: scrolled ? 'hsl(218, 50%, 12%)' : 'transparent',
         backdropFilter: scrolled ? 'blur(20px)' : 'none',
       }}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="/">
-          <img src="/images/nexval-logo.png" alt="Nexval" className="h-8" />
+          <img
+            src="/images/nexval-logo.png"
+            alt="Nexval"
+            className="h-7 transition-all duration-300"
+            style={{
+              filter: scrolled ? 'brightness(1)' : 'brightness(1)',
+            }}
+          />
         </a>
 
-        {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-semibold tracking-wider text-white/80 hover:text-mint transition-colors duration-300"
+              className="text-xs font-medium tracking-[0.1em] text-white/60 hover:text-mint transition-colors duration-300"
             >
               {l.label}
             </a>
           ))}
         </div>
 
-        {/* Mobile toggle */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white/70"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
-      {/* Mobile panel */}
       {mobileOpen && (
         <div
-          className="md:hidden absolute top-full left-0 right-0 py-6 px-6 flex flex-col gap-4"
-          style={{ backgroundColor: 'rgba(15,26,46,0.95)', backdropFilter: 'blur(20px)' }}
+          className="md:hidden absolute top-full left-0 right-0 py-8 px-6 flex flex-col gap-5"
+          style={{ backgroundColor: 'hsl(218, 50%, 12%)', backdropFilter: 'blur(20px)' }}
         >
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setMobileOpen(false)}
-              className="text-sm font-semibold tracking-wider text-white/80 hover:text-mint transition-colors"
+              className="text-xs font-medium tracking-[0.1em] text-white/60 hover:text-mint transition-colors"
             >
               {l.label}
             </a>
