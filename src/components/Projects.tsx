@@ -1,12 +1,12 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const projects = [
-  { src: '/images/project-1.jpeg', label: 'Doppelhaus – Drohnenansicht' },
-  { src: '/images/project-2.jpeg', label: 'Neubau mit Solaranlage' },
-  { src: '/images/project-3.jpeg', label: 'Bauphase – Rohbau' },
-  { src: '/images/project-4.jpeg', label: 'Moderne Küche mit Kochinsel' },
-  { src: '/images/project-5.jpeg', label: 'Offener Wohn-/Essbereich' },
-  { src: '/images/project-6.jpeg', label: 'Badezimmer – Hochwertige Ausstattung' },
+  { src: '/images/projekt-1.jpeg', label: 'Doppelhaus – Drohnenansicht' },
+  { src: '/images/projekt-2.jpeg', label: 'Neubau mit Solaranlage' },
+  { src: '/images/projekt-3.jpeg', label: 'Bauphase – Rohbau' },
+  { src: '/images/projekt-4.jpeg', label: 'Moderne Küche mit Kochinsel' },
+  { src: '/images/projekt-5.jpeg', label: 'Offener Wohn-/Essbereich' },
+  { src: '/images/projekt-6.jpeg', label: 'Badezimmer – Hochwertige Ausstattung' },
 ];
 
 export default function Projects() {
