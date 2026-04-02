@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <img src="/images/nexval-logo.png" alt="Nexval" className="h-10" />
             <p className="text-white/40 text-sm mt-3">
-              Hans-Henny-Jahnn-Weg 41-45<br />22085 Hamburg
+              Nexval GmbH i.G.<br />Hans-Henny-Jahnn-Weg 41-45<br />22085 Hamburg
             </p>
             <p className="text-white/40 text-sm mt-1">info@nexval.de</p>
           </div>
