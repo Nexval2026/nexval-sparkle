@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 
 const links = [
   { label: 'PRIME', href: '#prime' },
+  { label: 'PROJEKTE', href: '#projects' },
   { label: 'TRANSACT', href: '#transact' },
   { label: 'OPS', href: '#ops' },
   { label: 'ÜBER UNS', href: '#about' },
@@ -22,9 +23,7 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'py-3'
-          : 'py-5'
+        scrolled ? 'py-3' : 'py-5'
       }`}
       style={{
         backgroundColor: scrolled ? 'rgba(15,26,46,0.85)' : 'transparent',
@@ -32,9 +31,8 @@ export default function Navigation() {
       }}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-montserrat text-2xl font-bold">
-          <span className="text-white">NEX</span>
-          <span className="text-mint">VAL</span>
+        <a href="#">
+          <img src="/images/nexval-logo.png" alt="Nexval" className="h-8" />
         </a>
 
         {/* Desktop */}

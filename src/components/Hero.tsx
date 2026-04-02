@@ -1,4 +1,5 @@
 import { useCountUp } from '@/hooks/useCountUp';
+import { useState } from 'react';
 
 const stats = [
   { value: 'KfW-40 / QNG', label: 'Baustandard', isText: true },
@@ -20,16 +21,36 @@ function StatItem({ value, label, isText }: { value: string; label: string; isTe
 }
 
 export default function Hero() {
+  const [videoError, setVideoError] = useState(false);
+
   return (
     <section
       className="relative min-h-screen flex flex-col justify-center pt-24 pb-16 overflow-hidden"
       style={{ backgroundColor: 'hsl(218,50%,12%)' }}
     >
-      {/* Gradient orbs */}
-      <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full opacity-[0.04]"
-        style={{ background: 'radial-gradient(circle, hsl(155,94%,67%), transparent)' }} />
-      <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full opacity-[0.03]"
-        style={{ background: 'radial-gradient(circle, hsl(155,94%,67%), transparent)' }} />
+      {/* Video Background */}
+      {!videoError ? (
+        <>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            onError={() => setVideoError(true)}
+          >
+            <source src="/videos/hero-bg.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-[hsl(218,50%,12%)]/80" />
+        </>
+      ) : (
+        <>
+          <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full opacity-[0.04]"
+            style={{ background: 'radial-gradient(circle, hsl(155,94%,67%), transparent)' }} />
+          <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full opacity-[0.03]"
+            style={{ background: 'radial-gradient(circle, hsl(155,94%,67%), transparent)' }} />
+        </>
+      )}
 
       <div className="container mx-auto px-6 relative z-10 flex-1 flex flex-col justify-center">
         {/* Headline */}

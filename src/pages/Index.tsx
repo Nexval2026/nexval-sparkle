@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import Prime from '@/components/Prime';
+import Projects from '@/components/Projects';
 import Comparison from '@/components/Comparison';
 import Process from '@/components/Process';
 import Requirements from '@/components/Requirements';
@@ -16,6 +17,7 @@ export default function Index() {
       <Navigation />
       <Hero />
       <Prime />
+      <Projects />
       <Comparison />
       <Process />
       <Requirements />
