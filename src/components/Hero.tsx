@@ -24,7 +24,7 @@ export default function Hero() {
     <>
       {/* Upper hero with background image */}
       <section
-        className="relative flex flex-col justify-center pt-32 pb-24 overflow-hidden"
+        className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden"
         style={{ backgroundColor: 'hsl(218,50%,12%)' }}
       >
         <img
