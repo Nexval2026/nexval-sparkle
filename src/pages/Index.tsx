@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Prime from '@/components/Prime';
 import Projects from '@/components/Projects';
 import Comparison from '@/components/Comparison';
+import Calculator from '@/components/Calculator';
 import Process from '@/components/Process';
 import Requirements from '@/components/Requirements';
 import Transact from '@/components/Transact';
