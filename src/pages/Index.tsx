@@ -19,6 +19,7 @@ export default function Index() {
       <Hero />
       <Prime />
       <Comparison />
+      <Calculator />
       <Process />
       <Requirements />
       <Projects />
