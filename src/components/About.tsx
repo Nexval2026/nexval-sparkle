@@ -8,11 +8,6 @@ const values = [
   { icon: Users, title: 'Ganzheitliche Betreuung', desc: 'Von der Konzeption bis zur Verwaltung' },
 ];
 
-const founders = [
-  { name: 'Nick Sadetzky', img: '/images/nick.jpg' },
-  { name: 'Sascha Hesse', img: '/images/sascha.jpg' },
-];
-
 export default function About() {
   const ref = useScrollReveal();
 
@@ -36,6 +31,27 @@ export default function About() {
           ))}
         </div>
 
+        {/* Team */}
+        <div className="mt-20 scroll-reveal">
+          <h3 className="text-2xl font-bold text-navy-text mint-underline">Gründer</h3>
+          <div className="mt-8 rounded-2xl overflow-hidden">
+            <img
+              src="/images/Team.png"
+              alt="Nick Sadetzky und Sascha Hesse – Geschäftsführer der Nexval GmbH"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-4 mt-6 text-center">
+            <div>
+              <h4 className="font-bold text-navy-text">Nick Sadetzky</h4>
+              <p className="text-sm text-gray-text">Geschäftsführer</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-navy-text">Sascha Hesse</h4>
+              <p className="text-sm text-gray-text">Geschäftsführer</p>
+            </div>
+          </div>
+        </div>
         {/* Founders */}
         <div className="mt-20 scroll-reveal">
           <h3 className="text-2xl font-bold text-navy-text mint-underline">Gründer</h3>
