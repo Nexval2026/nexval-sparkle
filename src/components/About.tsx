@@ -34,20 +34,20 @@ export default function About() {
         {/* Team */}
         <div className="mt-20 scroll-reveal">
           <h3 className="text-2xl font-bold text-navy-text mint-underline">Gründer</h3>
-          <div className="mt-8 rounded-2xl overflow-hidden">
+          <div className="mt-8 flex justify-center">
             <img
               src="/images/Team.png"
-              alt="Nick Sadetzky und Sascha Hesse – Geschäftsführer der Nexval GmbH"
-              className="w-full h-auto object-cover"
+              alt="Sascha Hesse und Nick Sadetzky – Geschäftsführer der Nexval GmbH"
+              className="w-full max-w-[600px] h-auto object-cover rounded-2xl"
             />
           </div>
-          <div className="grid grid-cols-2 gap-4 mt-6 text-center">
+          <div className="grid grid-cols-2 gap-4 mt-6 text-center max-w-[600px] mx-auto">
             <div>
-              <h4 className="font-bold text-navy-text">Nick Sadetzky</h4>
+              <h4 className="font-bold text-navy-text">Sascha Hesse</h4>
               <p className="text-sm text-gray-text">Geschäftsführer</p>
             </div>
             <div>
-              <h4 className="font-bold text-navy-text">Sascha Hesse</h4>
+              <h4 className="font-bold text-navy-text">Nick Sadetzky</h4>
               <p className="text-sm text-gray-text">Geschäftsführer</p>
             </div>
           </div>
