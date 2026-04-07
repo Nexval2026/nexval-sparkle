@@ -20,7 +20,7 @@ export default function Impressum() {
             <div>
               <h2 className="text-lg font-semibold text-white mb-2">Angaben gemäß § 5 TMG</h2>
               <p>
-                Nexval GmbH i.G.<br />
+                Nexval GmbH<br />
                 Hans-Henny-Jahnn-Weg 41-45<br />
                 22085 Hamburg
               </p>
@@ -35,18 +35,18 @@ export default function Impressum() {
             </div>
 
             <div>
-              <h2 className="text-lg font-semibold text-white mb-2">Vertretungsberechtigte</h2>
-              <p>Nick Sadetzky &amp; Sascha Hesse</p>
+              <h2 className="text-lg font-semibold text-white mb-2">Geschäftsführer</h2>
+              <p>Nick Sadetzky, Sascha Hesse</p>
             </div>
 
             <div>
               <h2 className="text-lg font-semibold text-white mb-2">Umsatzsteuer-ID</h2>
-              <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: Beantragt</p>
+              <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: wird nachgetragen</p>
             </div>
 
             <div>
               <h2 className="text-lg font-semibold text-white mb-2">Handelsregister</h2>
-              <p>Handelsregisternummer: Beantragt</p>
+              <p>Amtsgericht Hamburg, HRB 198324</p>
             </div>
 
             <div>

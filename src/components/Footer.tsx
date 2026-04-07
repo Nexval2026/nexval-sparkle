@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <img src="/images/nexval-logo.png" alt="Nexval" className="h-10" />
             <p className="text-white/40 text-sm mt-3">
-              Nexval GmbH i.G.<br />Hans-Henny-Jahnn-Weg 41-45<br />22085 Hamburg
+              Nexval GmbH<br />Hans-Henny-Jahnn-Weg 41-45<br />22085 Hamburg
             </p>
             <p className="text-white/40 text-sm mt-1">info@nexval.de</p>
           </div>
@@ -47,7 +47,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-6 border-t" style={{ borderColor: 'hsl(222,27%,28%)' }}>
           <p className="text-white/30 text-xs text-center">
-            © 2026 Nexval GmbH i.G. | Alle Rechte vorbehalten.
+            © 2026 Nexval GmbH | Alle Rechte vorbehalten.
           </p>
           <p className="text-white/20 text-[10px] text-center mt-2">
             Hinweis: Steuerliche Vorteile sind individuell. Wir empfehlen die Beratung durch einen Steuerberater.
