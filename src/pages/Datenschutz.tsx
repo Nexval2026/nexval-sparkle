@@ -144,12 +144,7 @@ export default function Datenschutz() {
               </p>
             </div>
 
-            <div>
-              <h2 className={h2Class}>10. Aktualität und Änderung dieser Datenschutzerklärung</h2>
-              <p>
-                Diese Datenschutzerklärung ist aktuell gültig und hat den Stand April 2026. Durch die Weiterentwicklung unserer Website oder aufgrund geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung anzupassen.
-              </p>
-            </div>
+            <p className="text-xs text-white/40 pt-4">Letzte Aktualisierung: 04/2026</p>
 
           </div>
         </div>
