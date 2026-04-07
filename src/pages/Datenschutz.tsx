@@ -26,7 +26,7 @@ export default function Datenschutz() {
             <div>
               <h2 className={h2Class}>Verantwortlicher</h2>
               <p>
-                Nexval GmbH, Hans-Henny-Jahnn-Weg 41–45, 22085 Hamburg<br />
+                Nexval GmbH, Hans-Henny-Jahnn-Weg 41-45, 22085 Hamburg<br />
                 E-Mail: <a href="mailto:info@nexval.de" className="text-mint hover:underline">info@nexval.de</a>
               </p>
               <p className="mt-2">Vertreten durch: Nick Sadetzky &amp; Sascha Hesse</p>
