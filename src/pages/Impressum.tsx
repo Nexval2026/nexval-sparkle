@@ -52,7 +52,7 @@ export default function Impressum() {
             <div>
               <h2 className="text-lg font-semibold text-white mb-2">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
               <p>
-                Nick Sadetzky &amp; Sascha Hesse<br />
+                Nick Sadetzky, Sascha Hesse<br />
                 Hans-Henny-Jahnn-Weg 41-45<br />
                 22085 Hamburg
               </p>

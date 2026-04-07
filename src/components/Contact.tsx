@@ -104,7 +104,7 @@ export default function Contact() {
         </p>
 
         <div className="mt-12 text-center text-sm text-gray-text scroll-reveal space-y-1">
-          <p className="font-semibold text-navy-text">Nexval GmbH i.G.</p>
+          <p className="font-semibold text-navy-text">Nexval GmbH</p>
           <p>Hans-Henny-Jahnn-Weg 41-45, 22085 Hamburg</p>
           <p>info@nexval.de | www.nexval.de</p>
         </div>
