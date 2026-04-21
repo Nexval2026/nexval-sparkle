@@ -50,7 +50,7 @@ export default function Footer() {
             © 2026 Nexval GmbH | Alle Rechte vorbehalten.
           </p>
           <p className="text-white/20 text-[10px] text-center mt-2">
-            Hinweis: Steuerliche Vorteile sind individuell. Wir empfehlen die Beratung durch einen Steuerberater.
+            Hinweis: Die Nexval GmbH erbringt Beratungs- und Betreuungsleistungen im Bereich Immobilieninvestments. Nexval ist weder Bauträger noch Baubetreuer im Sinne des § 34c GewO. Steuerliche Vorteile sind individuell – wir empfehlen die Beratung durch einen Steuerberater.
           </p>
         </div>
       </div>
