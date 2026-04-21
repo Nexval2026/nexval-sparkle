@@ -4,8 +4,8 @@ const steps = [
   { title: 'Konzeption', desc: 'Individuelle Beratung und Investmentstrukturierung' },
   { title: 'Finanzierung', desc: 'KfW-Förderung & optimierte Finanzierungsstruktur' },
   { title: 'Beurkundung', desc: 'Notarielle Beurkundung mit getrennten Verträgen' },
-  { title: 'Bauphase', desc: 'Professionelle Baubegleitung bis zur Fertigstellung' },
-  { title: 'Übergabe', desc: 'Schlüsselübergabe und Start der Vermietung' },
+  { title: 'Bauphase', desc: 'Der Bau erfolgt durch den beauftragten Bauunternehmer – wir halten Sie über den Fortschritt informiert' },
+  { title: 'Übergabe', desc: 'Abnahme durch Sie und den Bauunternehmer – anschließend Start der Vermietung' },
 ];
 
 const tags = ['Hamburg', 'Metropolregion Nord', 'Wachstumslagen'];

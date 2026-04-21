@@ -5,7 +5,7 @@ const values = [
   { icon: BarChart3, title: 'Strukturierter Ansatz', desc: 'Fundierte Analysen und realistische Kalkulationen' },
   { icon: Leaf, title: 'Nachhaltiger Wohnraum', desc: 'Energieeffizient und familienorientiert' },
   { icon: TrendingUp, title: 'Marktexpertise', desc: 'Kontinuierliche Marktbeobachtung' },
-  { icon: Users, title: 'Ganzheitliche Betreuung', desc: 'Von der Konzeption bis zur Verwaltung' },
+  { icon: Users, title: 'Ganzheitliche Betreuung', desc: 'Von der Investmentberatung bis zur Vermietung' },
 ];
 
 export default function About() {

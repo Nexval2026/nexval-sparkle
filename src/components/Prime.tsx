@@ -21,7 +21,7 @@ export default function Prime() {
           </p>
           <p className="mt-4 text-gray-text max-w-2xl leading-relaxed">
             Unsere PRIME-Investments setzen auf den KfW-40/QNG-Standard und bieten maximale steuerliche Vorteile durch
-            degressive und Sonder-AfA. Wir entwickeln energieeffiziente Doppelhäuser in familienorientierten Lagen mit
+            degressive und Sonder-AfA. Unsere PRIME-Investments umfassen energieeffiziente Doppelhäuser in familienorientierten Lagen mit
             stabiler Nachfrage und langfristigem Wertsteigerungspotenzial.
           </p>
         </div>
